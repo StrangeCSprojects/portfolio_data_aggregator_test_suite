@@ -1,0 +1,8 @@
+pytest>=7.0.0
+requests>=2.25.0
+responses>=0.23.0
+pydantic>=1.10.0
+pytest-cov>=4.0.0
+flake8>=5.0.0
+httpx>=0.23.0
+locust>=2.15.0
