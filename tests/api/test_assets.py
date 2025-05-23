@@ -6,7 +6,7 @@ from tests.schemas.asset_schema import Asset
 def test_get_assets():
     responses.add(
         responses.GET,
-        "https://api.example.com/api/assests",
+        "https://api.example.com/api/assets",
         json=[
                 {
                     "symbol": "AAPL",
@@ -50,8 +50,6 @@ def test_invalid_asset():
     assert response.json()["error"] == "Asset not found"
 
 
-
-
 @responses.activate
 def test_get_assets_schema():
     mock_data = [
@@ -77,3 +75,5 @@ def test_get_assets_schema():
     for item in response.json():
         validated = Asset(**item)
         assert validated.symbol.isupper()
+
+
