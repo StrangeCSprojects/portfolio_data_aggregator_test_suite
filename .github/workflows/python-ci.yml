@@ -26,8 +26,8 @@ jobs:
         source venv/bin/activate
         pytest --cov=tests
 
-    - name: Upload Coverage Report (HTML)
-      uses: actions/upload-artifact@v3.1.2
-      with:
-        name: coverage-html
-        path: htmlcov/
+    # - name: Upload Coverage Report (HTML)
+    #   uses: actions/upload-artifact@v3.1.2
+    #   with:
+    #     name: coverage-html
+    #     path: htmlcov/
